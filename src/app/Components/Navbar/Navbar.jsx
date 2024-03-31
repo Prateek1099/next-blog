@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./navbar.module.css"
 import Image from "next/image";
 import Link from "next/link";
+import AuthLinks from "../AuthLinks/AuthLinks";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Navbar = ()=>{
 
@@ -17,11 +19,13 @@ return(
     </div>
     <div className={styles.logo}>Cricbuzz</div>
     <div className={styles.links}>
+        <ThemeToggle />
         <Link href="">Homepage</Link>
         <Link href="">Contact</Link>
         <Link href="">About</Link>
+        <AuthLinks />
     </div>
-        Navbar</div>
+       </div>
     
 )
 }
